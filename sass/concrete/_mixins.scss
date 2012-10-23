@@ -1,0 +1,13 @@
+@mixin column-width(
+	$columns		: 1,
+	$width			: $desktop-width
+){
+	width				: ($width / 12) * $columns - $margin * 2;
+}
+
+@mixin offset-margin(
+	$columns		: 1,
+	$width			: $desktop-width
+){
+	margin-left	: ($width / 12) * $columns + $margin;
+}
