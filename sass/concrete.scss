@@ -27,6 +27,18 @@ html, body {
 .column, .columns {
 	margin			: 0 $margin;
 	float				: left;
+	
+	> .column, > .columns {
+		margin					: 0;
+		@media screen and (min-width: $tablet-width) {
+			margin-right	: 0;
+			margin-left		: $margin * 2;
+
+			&:first-child {
+				margin-left	: 0;
+			}
+		}
+	}
 }
 
 .one						{ @include column-width(12,		$mobile-width); }
