@@ -38,6 +38,22 @@ Columns can be offset by a certain number of columns by defining the class with 
 		</section>
 	</div>
 
+###	Nested Columns
+
+Columns can be nested one level deep by placing them within another column.
+
+	<div class="row">
+		<section class="nine columns">
+			<section class="four columns">
+			</section>
+			<section class="five columns">
+			</section>
+		</section>
+		
+		<section class="three columns">
+		</section>
+	</div>
+
 ##	Responsive Behaviour
 
 At desktop resolutions, the full 960px grid will be displayed. At tablet resolutions, the grid will be compressed to a 720px grid. At mobile resolutions, the grid will be compressed to a single column.
