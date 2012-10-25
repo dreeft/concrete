@@ -28,7 +28,7 @@ html, body {
 	margin			: 0 $margin;
 	float				: left;
 	
-	> .column, > .columns {
+	.column, .columns {
 		margin					: 0;
 		@media screen and (min-width: $tablet-transition) {
 			margin-right	: 0;
