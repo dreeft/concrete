@@ -34,7 +34,7 @@ html, body {
 			margin-right	: 0;
 			margin-left		: $margin * 2;
 
-			&:first-child, .first {
+			&:first-child, &.first {
 				margin-left	: 0;
 			}
 		}
