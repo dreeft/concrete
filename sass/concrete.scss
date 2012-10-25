@@ -25,11 +25,13 @@ html, body {
 }
 
 .column, .columns {
-	margin			: 0 $margin;
-	float				: left;
+	margin-left		: $margin;
+	margin-right	: $margin;
+	float					: left;
 	
 	.column, .columns {
-		margin					: 0;
+		margin-right		: 0;
+		margin-left			: 0;
 		@media screen and (min-width: $tablet-transition) {
 			margin-right	: 0;
 			margin-left		: $margin * 2;
