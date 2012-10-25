@@ -16,10 +16,10 @@ html, body {
 	margin			: 0 auto;
 	text-align	: left;
 	width				: $mobile-width;
-	@media screen and (min-width: $tablet-width) {
+	@media screen and (min-width: $tablet-transition) {
 		width			: $tablet-width;
 	}
-	@media screen and (min-width: $desktop-width) {
+	@media screen and (min-width: $desktop-transition) {
 		width			: $desktop-width;
 	}
 }
@@ -30,7 +30,7 @@ html, body {
 	
 	> .column, > .columns {
 		margin					: 0;
-		@media screen and (min-width: $tablet-width) {
+		@media screen and (min-width: $tablet-transition) {
 			margin-right	: 0;
 			margin-left		: $margin * 2;
 
@@ -67,7 +67,7 @@ html, body {
 	&.by-ten			{ @include offset-margin(0,		$mobile-width); }
 	&.by-eleven		{ @include offset-margin(0,		$mobile-width); }
 }
-@media screen and (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-transition) {
 	.one					{ @include column-width(1,		$tablet-width); }
 	.two					{ @include column-width(2,		$tablet-width); }
 	.three				{ @include column-width(3,		$tablet-width); }
@@ -95,7 +95,7 @@ html, body {
 		&.by-eleven	{ @include offset-margin(11,	$tablet-width); }
 	}
 }
-@media screen and (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-transition) {
 	.one					{ @include column-width(1,		$desktop-width); }
 	.two					{ @include column-width(2,		$desktop-width); }
 	.three				{ @include column-width(3,		$desktop-width); }
