@@ -27,6 +27,11 @@ html, body {
 	margin-right	: $concrete-margin;
 	float					: left;
 	
+	&.without-margin {
+		margin-left		: 0;
+		margin-right	: 0;
+	}
+	
 	.column, .columns {
 		margin-right		: 0;
 		margin-left			: 0;
@@ -67,6 +72,21 @@ html, body {
 	&.by-ten			{ @include offset-margin(0,		$concrete-mobile-width); }
 	&.by-eleven		{ @include offset-margin(0,		$concrete-mobile-width); }
 }
+.without-margin {
+	&.one					{ @include column-width-without-margin(1,		$concrete-mobile-width); }
+	&.two					{ @include column-width-without-margin(2,		$concrete-mobile-width); }
+	&.three				{ @include column-width-without-margin(3,		$concrete-mobile-width); }
+	&.four				{ @include column-width-without-margin(4,		$concrete-mobile-width); }
+	&.five				{ @include column-width-without-margin(5,		$concrete-mobile-width); }
+	&.six					{ @include column-width-without-margin(6,		$concrete-mobile-width); }
+	&.seven				{ @include column-width-without-margin(7,		$concrete-mobile-width); }
+	&.eight				{ @include column-width-without-margin(8,		$concrete-mobile-width); }
+	&.nine				{ @include column-width-without-margin(9,		$concrete-mobile-width); }
+	&.ten					{ @include column-width-without-margin(10,	$concrete-mobile-width); }
+	&.eleven			{ @include column-width-without-margin(11,	$concrete-mobile-width); }
+	&.twelve			{ @include column-width-without-margin(12,	$concrete-mobile-width); }
+}
+
 @media screen and (min-width: $concrete-tablet-transition) {
 	.one					{ @include column-width(1,		$concrete-tablet-width); }
 	.two					{ @include column-width(2,		$concrete-tablet-width); }
@@ -93,6 +113,20 @@ html, body {
 		&.by-nine		{ @include offset-margin(9,		$concrete-tablet-width); }
 		&.by-ten		{ @include offset-margin(10,	$concrete-tablet-width); }
 		&.by-eleven	{ @include offset-margin(11,	$concrete-tablet-width); }
+	}
+	.without-margin {
+		&.one					{ @include column-width-without-margin(1,		$concrete-tablet-width); }
+		&.two					{ @include column-width-without-margin(2,		$concrete-tablet-width); }
+		&.three				{ @include column-width-without-margin(3,		$concrete-tablet-width); }
+		&.four				{ @include column-width-without-margin(4,		$concrete-tablet-width); }
+		&.five				{ @include column-width-without-margin(5,		$concrete-tablet-width); }
+		&.six					{ @include column-width-without-margin(6,		$concrete-tablet-width); }
+		&.seven				{ @include column-width-without-margin(7,		$concrete-tablet-width); }
+		&.eight				{ @include column-width-without-margin(8,		$concrete-tablet-width); }
+		&.nine				{ @include column-width-without-margin(9,		$concrete-tablet-width); }
+		&.ten					{ @include column-width-without-margin(10,	$concrete-tablet-width); }
+		&.eleven			{ @include column-width-without-margin(11,	$concrete-tablet-width); }
+		&.twelve			{ @include column-width-without-margin(12,	$concrete-tablet-width); }
 	}
 }
 @media screen and (min-width: $concrete-desktop-transition) {
@@ -121,6 +155,20 @@ html, body {
 		&.by-nine		{ @include offset-margin(9,		$concrete-desktop-width); }
 		&.by-ten		{ @include offset-margin(10,	$concrete-desktop-width); }
 		&.by-eleven	{ @include offset-margin(11,	$concrete-desktop-width); }
+	}
+	.without-margin {
+		&.one					{ @include column-width-without-margin(1,		$concrete-desktop-width); }
+		&.two					{ @include column-width-without-margin(2,		$concrete-desktop-width); }
+		&.three				{ @include column-width-without-margin(3,		$concrete-desktop-width); }
+		&.four				{ @include column-width-without-margin(4,		$concrete-desktop-width); }
+		&.five				{ @include column-width-without-margin(5,		$concrete-desktop-width); }
+		&.six					{ @include column-width-without-margin(6,		$concrete-desktop-width); }
+		&.seven				{ @include column-width-without-margin(7,		$concrete-desktop-width); }
+		&.eight				{ @include column-width-without-margin(8,		$concrete-desktop-width); }
+		&.nine				{ @include column-width-without-margin(9,		$concrete-desktop-width); }
+		&.ten					{ @include column-width-without-margin(10,	$concrete-desktop-width); }
+		&.eleven			{ @include column-width-without-margin(11,	$concrete-desktop-width); }
+		&.twelve			{ @include column-width-without-margin(12,	$concrete-desktop-width); }
 	}
 }
 
